@@ -1,455 +1,254 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap');
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: A Importância da Água</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-:root {
-    --verde: #009739;
-    --amarelo: #FEDD00;
-    --azul: #002776;
-    --cinza-claro: #f8f9fa;
-}
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-circle">💧</div>
+                <div>
+                    <strong style="font-size: 1.6rem;">Água</strong>
+                    <div style="font-size: 0.75rem; color: #666; margin-top: -4px;">Fonte de Vida</div>
+                </div>
+            </div>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            <ul class="nav-links">
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#usos">Usos da Água</a></li>
+                <li><a href="#problemas">Problemas</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+            </ul>
 
-body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #f8f9fa;
-}
+            <a href="#contato" class="btn-download">
+                <span>📥</span> 
+                <span>Baixar Projeto</span>
+            </a>
+        </div>
+    </nav>
 
-.title-font {
-    font-family: 'Playfair Display', Georgia, serif;
-}
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="title-font">ÁGUA<br>A FONTE DE<br>TODA VIDA</h1>
+            <p>O recurso mais valioso do planeta. Sem ela, não existe vida, comida, energia ou futuro.</p>
+            
+            <div class="hero-buttons">
+                <a href="#introducao" class="btn-primary">
+                    Explorar o Projeto 
+                    <span style="font-size: 1.3rem;">↓</span>
+                </a>
+            </div>
+        </div>
+    </header>
 
-/* Navbar */
-nav {
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+    <!-- INTRODUÇÃO -->
+    <section id="introducao">
+        <div class="intro-grid">
+            <div class="intro-text">
+                <span style="color: var(--verde); font-weight: 700; letter-spacing: 2px;">O ELEMENTO MAIS IMPORTANTE</span>
+                <h2 class="title-font" style="font-size: 3.2rem; line-height: 1.1; margin: 12px 0 24px;">Por que a Água é tão importante?</h2>
+                
+                <p>A água é o recurso natural mais abundante da Terra, mas também um dos mais ameaçados. Cobre cerca de 71% da superfície do planeta, porém apenas 2,5% é água doce e menos de 1% está disponível para consumo humano.</p>
+                
+                <p>Ela é essencial para <span class="highlight">toda forma de vida</span>, para a produção de alimentos, geração de energia, indústria, higiene e saúde. Sem água de qualidade, não existe desenvolvimento sustentável.</p>
+            </div>
+            
+            <div class="intro-image">
+                <img src="https://picsum.photos/id/1016/700/520" alt="Água e natureza">
+                <div class="intro-badge">
+                    <strong style="font-size: 1.1rem;">A água é vida</strong><br>
+                    <span style="color: #666;">Sem ela não sobrevivemos</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 18px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <!-- HISTÓRIA -->
+    <section id="historia" style="background: white; padding-top: 60px; padding-bottom: 60px;">
+        <div style="max-width: 1100px; margin: 0 auto; padding: 0 30px;">
+            <div class="section-header">
+                <span>LINHA DO TEMPO</span>
+                <h2 class="title-font">A História da Água na Humanidade</h2>
+            </div>
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div>
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Civilizações Antigas</h3>
+                        <p>Os primeiros povos se estabeleceram perto de rios (Nilo, Tigre, Eufrates, Amazonas). A água era fonte de vida, transporte e agricultura.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div>
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Idade Média e Renascimento</h3>
+                        <p>Sistemas de aquedutos e fontes foram construídos. A água começou a ser tratada em algumas cidades para evitar doenças.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div>
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Revolução Industrial</h3>
+                        <p>Com o crescimento das cidades, a poluição dos rios aumentou drasticamente. Surgiram as primeiras leis de proteção à água.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div>
+                        <div class="timeline-dot">4</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Século XXI</h3>
+                        <p>Hoje enfrentamos crise hídrica global. A ONU considera o acesso à água potável um direito humano fundamental desde 2010.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.logo-circle {
-    width: 48px;
-    height: 48px;
-    background: linear-gradient(135deg, var(--verde) 0%, var(--azul) 100%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 26px;
-    font-weight: bold;
-}
+    <!-- USOS DA ÁGUA -->
+    <section id="usos">
+        <div class="section-header">
+            <span>PARA QUE SERVEMOS</span>
+            <h2 class="title-font">Principais Usos da Água</h2>
+        </div>
 
-.nav-links {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-}
+        <div class="cards-grid">
+            <div class="fashion-card">
+                <img src="https://picsum.photos/id/160/600/340" alt="Consumo Humano">
+                <div class="fashion-card-content">
+                    <h3>Consumo Humano</h3>
+                    <p>Beber, cozinhar, higiene pessoal e limpeza. Uma pessoa precisa de cerca de 2 a 4 litros de água por dia para sobreviver, mas usamos muito mais no dia a dia.</p>
+                </div>
+            </div>
+            
+            <div class="fashion-card">
+                <img src="https://picsum.photos/id/201/600/340" alt="Agricultura">
+                <div class="fashion-card-content">
+                    <h3>Agricultura</h3>
+                    <p>É o maior consumidor de água do mundo (cerca de 70%). A irrigação é fundamental para produzir alimentos para bilhões de pessoas.</p>
+                </div>
+            </div>
+            
+            <div class="fashion-card">
+                <img src="https://picsum.photos/id/251/600/340" alt="Indústria e Energia">
+                <div class="fashion-card-content">
+                    <h3>Indústria e Energia</h3>
+                    <p>Usada na produção de quase tudo que consumimos. Também é essencial para gerar energia hidrelétrica, que abastece milhões de casas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
+    <!-- PROBLEMAS -->
+    <section id="problemas" style="background: #f8f9fa;">
+        <div class="section-header">
+            <span>DESAFIOS ATUAIS</span>
+            <h2 class="title-font">Os Principais Problemas com a Água</h2>
+        </div>
 
-.nav-links a:hover {
-    color: var(--verde);
-}
+        <div class="designers-grid">
+            <div class="designer-card">
+                <img src="https://picsum.photos/id/1005/400/300" alt="Escassez">
+                <h3>Escassez de Água</h3>
+                <div class="role">Mais de 2 bilhões de pessoas</div>
+                <p>Milhões de pessoas no mundo não têm acesso a água potável segura. A escassez já afeta várias regiões do Brasil, especialmente no Nordeste.</p>
+            </div>
+            
+            <div class="designer-card">
+                <img src="https://picsum.photos/id/30/400/300" alt="Poluição">
+                <h3>Poluição dos Recursos Hídricos</h3>
+                <div class="role">Rios, lagos e oceanos</div>
+                <p>Despejo de esgoto, lixo plástico, agrotóxicos e resíduos industriais contaminam a água e destroem ecossistemas inteiros.</p>
+            </div>
+            
+            <div class="designer-card">
+                <img src="https://picsum.photos/id/160/400/300" alt="Desperdício">
+                <h3>Desperdício e Uso Ineficiente</h3>
+                <div class="role">Perda de água tratada</div>
+                <p>No Brasil, perdemos em média 40% da água tratada por causa de vazamentos e uso ineficiente em casas, indústrias e agricultura.</p>
+            </div>
+            
+            <div class="designer-card">
+                <img src="https://picsum.photos/id/201/400/300" alt="Mudanças Climáticas">
+                <h3>Mudanças Climáticas</h3>
+                <div class="role">Impacto no ciclo da água</div>
+                <p>Secas mais longas, chuvas extremas e derretimento de geleiras estão alterando o ciclo natural da água em todo o planeta.</p>
+            </div>
+        </div>
+    </section>
 
-.btn-download {
-    background: var(--verde);
-    color: white;
-    padding: 12px 24px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
+    <!-- SOLUÇÕES -->
+    <section id="solucoes">
+        <div class="section-header">
+            <span>O QUE PODEMOS FAZER</span>
+            <h2 class="title-font">Soluções e Como Cuidar da Água</h2>
+        </div>
 
-.btn-download:hover {
-    background: #007a2f;
-    transform: translateY(-2px);
-}
+        <div class="icones-grid">
+            <div class="icone">
+                <img src="https://picsum.photos/id/1009/400/400" alt="Economia">
+                <h3>Economizar em Casa</h3>
+                <p style="color: #555;">Tomar banhos mais curtos, fechar a torneira ao escovar os dentes, consertar vazamentos e usar a máquina de lavar só com carga completa.</p>
+            </div>
+            
+            <div class="icone">
+                <img src="https://picsum.photos/id/1006/400/400" alt="Reuso">
+                <h3>Reaproveitamento</h3>
+                <p style="color: #555;">Usar água da chuva para regar plantas, lavar calçadas e carros. Sistemas de reuso de água cinza estão crescendo em casas e prédios.</p>
+            </div>
+            
+            <div class="icone">
+                <img src="https://picsum.photos/id/1012/400/400" alt="Preservação">
+                <h3>Preservar Mananciais</h3>
+                <p style="color: #555;">Proteger rios, nascentes e matas ciliares. Não jogar lixo em rios e participar de mutirões de limpeza são atitudes importantes.</p>
+            </div>
+        </div>
+    </section>
 
-/* Hero */
-.hero {
-    height: 100dvh;
-    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://picsum.photos/id/1016/2000/1200');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: white;
-    text-align: center;
-}
+    <!-- CONCLUSÃO -->
+    <section style="padding-top: 40px; padding-bottom: 100px;">
+        <div class="conclusao">
+            <h2 class="title-font">Conclusão</h2>
+            <p>A água é um bem finito e essencial para a nossa sobrevivência. Cada gota desperdiçada ou poluída é um prejuízo para o futuro de todos nós.</p>
+            <p>A boa notícia é que <strong>cada pessoa pode fazer a diferença</strong>. Pequenas atitudes diárias, somadas a políticas públicas e tecnologia, podem garantir água limpa para as próximas gerações.</p>
+            
+            <div style="margin-top: 40px;">
+                <div class="badge-final">
+                    <span style="font-size: 1.6rem;">💧</span>
+                    <span>Cuidar da água é cuidar da vida!</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.hero-content {
-    max-width: 900px;
-    padding: 0 20px;
-}
+    <!-- FOOTER -->
+    <footer id="contato">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <p style="margin-bottom: 8px;">Projeto educacional sobre a Importância da Água • 2026</p>
+            <p style="font-size: 0.85rem; opacity: 0.6;">Feito para conscientizar sobre o uso responsável e a preservação dos recursos hídricos</p>
+        </div>
+    </footer>
 
-.hero h1 {
-    font-size: 5.5rem;
-    font-weight: 700;
-    line-height: 1.05;
-    margin-bottom: 20px;
-    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
-}
-
-.hero p {
-    font-size: 1.5rem;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    opacity: 0.95;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn-primary {
-    background: white;
-    color: #222;
-    padding: 16px 36px;
-    border-radius: 16px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.btn-primary:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-}
-
-/* Sections */
-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 30px;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-header span {
-    color: var(--verde);
-    font-weight: 600;
-    letter-spacing: 3px;
-    font-size: 0.9rem;
-}
-
-.section-header h2 {
-    font-size: 3rem;
-    margin-top: 8px;
-    color: #222;
-}
-
-/* Intro */
-.intro-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.intro-text p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 18px;
-}
-
-.intro-image {
-    position: relative;
-}
-
-.intro-image img {
-    width: 100%;
-    border-radius: 24px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
-.intro-badge {
-    position: absolute;
-    bottom: -25px;
-    right: -25px;
-    background: white;
-    padding: 20px 28px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-    max-width: 240px;
-}
-
-/* Timeline */
-.timeline {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.timeline-item {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.timeline-item:last-child {
-    margin-bottom: 0;
-}
-
-.timeline-dot {
-    width: 32px;
-    height: 32px;
-    background: var(--verde);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    flex-shrink: 0;
-    z-index: 2;
-}
-
-.timeline-content {
-    flex: 1;
-}
-
-.timeline-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-    color: #222;
-}
-
-.timeline-content p {
-    color: #555;
-    font-size: 1.05rem;
-}
-
-.timeline-line {
-    position: absolute;
-    left: 15px;
-    top: 32px;
-    bottom: -40px;
-    width: 3px;
-    background: #e0e0e0;
-}
-
-.timeline-item:last-child .timeline-line {
-    display: none;
-}
-
-/* Cards Grid */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 28px;
-}
-
-.fashion-card {
-    background: white;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border: 1px solid #eee;
-}
-
-.fashion-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
-}
-
-.fashion-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.fashion-card-content {
-    padding: 28px;
-}
-
-.fashion-card h3 {
-    font-size: 1.45rem;
-    margin-bottom: 12px;
-    color: #222;
-}
-
-.fashion-card p {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.7;
-}
-
-/* Designers */
-.designers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-}
-
-.designer-card {
-    background: white;
-    padding: 28px;
-    border-radius: 24px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-}
-
-.designer-card:hover {
-    transform: translateY(-8px);
-}
-
-.designer-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 18px;
-    margin-bottom: 20px;
-}
-
-.designer-card h3 {
-    font-size: 1.35rem;
-    margin-bottom: 6px;
-}
-
-.designer-card .role {
-    color: var(--verde);
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-bottom: 14px;
-}
-
-/* Ícones */
-.icones-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    text-align: center;
-}
-
-.icone {
-    padding: 20px;
-}
-
-.icone img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 8px solid var(--amarelo);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-    margin-bottom: 24px;
-}
-
-.icone h3 {
-    font-size: 1.6rem;
-    margin-bottom: 12px;
-}
-
-/* Conclusão */
-.conclusao {
-    background: white;
-    border-radius: 30px;
-    padding: 70px 60px;
-    text-align: center;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
-}
-
-.conclusao h2 {
-    font-size: 2.8rem;
-    margin-bottom: 24px;
-}
-
-.conclusao p {
-    font-size: 1.25rem;
-    max-width: 700px;
-    margin: 0 auto 30px;
-    color: #555;
-}
-
-.badge-final {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: var(--verde);
-    color: white;
-    padding: 16px 36px;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-/* Footer */
-footer {
-    background: #1a1a1a;
-    color: #aaa;
-    text-align: center;
-    padding: 50px 30px 30px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .hero h1 {
-        font-size: 3.8rem;
-    }
-    
-    .intro-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .section-header h2 {
-        font-size: 2.4rem;
-    }
-}
-
-.highlight {
-    color: var(--verde);
-    font-weight: 600;
-}
-  
-  
+</body>
+</html>
