@@ -100,7 +100,7 @@ nav {
 /* Hero */
 .hero {
     height: 100dvh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/1016/2000/1200');
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://picsum.photos/id/1016/2000/1200');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -117,7 +117,7 @@ nav {
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: 700;
     line-height: 1.05;
     margin-bottom: 20px;
@@ -435,7 +435,7 @@ footer {
     }
     
     .hero h1 {
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
     
     .intro-grid {
@@ -450,4 +450,6 @@ footer {
 .highlight {
     color: var(--verde);
     font-weight: 600;
-}ss
+}
+  
+  
